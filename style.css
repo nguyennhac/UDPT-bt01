@@ -10,7 +10,7 @@ ul
     margin-top: 0px;
 }
 #main{
-    width: 1000px;
+    width: 70%;
     padding: 0;
     margin-left: auto;
     margin-right: auto;
@@ -19,7 +19,7 @@ ul
 	height: 100px;
     background-color: #FFFFFF;
     border: 1px solid #CDCDCD;
-    margin-bottom:5px;
+    margin-bottom:7px;
 }
 #head-link{
      height: 30px;
@@ -28,7 +28,7 @@ ul
      padding-right: 10px;
      border: 1px solid #CDCDCD;
      background-color: #6495ED;
-     margin-bottom:5px;
+     margin-bottom:7px;
      clear: both;
      text-align: center;
      font-size: 18px;
@@ -50,25 +50,24 @@ ul
 	color: #333;
 }
 #left{
-     width: 200px;
+     width: 19%;
      min-height: 600px;
      border: 1px solid #CDCDCD;
      float:left;
      background-color: #F5F5F5;
-     margin-bottom: 5px;
+     margin-bottom: 7px;
      text-align:left;
 }
 #content{
-	width: 791px;
+	width: 79.5%;
      min-height: 400px;
      border: 1px solid #CDCDCD;
-     float:left;
-     margin-left: 5px;
+     float:right;
+     
      margin-right: 0px;
      margin-bottom: 5px;
 }
 #main-content{
-	 width: 998px;
      min-height: 400px;
      border: 1px solid #CDCDCD;
      float:left;
@@ -97,25 +96,220 @@ ul
     color: #0000FF;
 }
 .leftSV {
-    width: 50%;
+    width: 40%;
     height:auto;
     float:left;
     margin-top: 30px;
 }
 .rightSV {
-    width:50%;
+    width:54%;
     height:500px;
     float:right;
     margin-top: 30px;
-    font-size: 28px;
+    font-size: 2vw;
+    text-align: left;
+	margin-right:25px;
+}
+.img img {
+    width: 100%;
+	height:250px;
+    margin:auto;
+    float:left;
+    margin-left: 20px;
+}
+.tennhom {
+    text-align:center;
+    margin: auto;
+    margin-top: 30px;
+}
+#groupimg 
+{
+    width: 80%;
+    height: 400px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+#groupimg img{
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+}
+
+.imageitem img {
+    width: 21%;
+	height:100px;
+    margin:5px;
+	padding:5px;
+    float: left;
+	border: 1px solid black;
+	display:block;
+	position: relative;
+   left:22%;
+}
+.imagegroup {
+	width:100%;
+	min-width:100px;
+	margin-left:auto;
+	margin-right:auto;
+	border: 1px solid black;
+	height: 123px;
+	
+}
+#left li a{
+	 display: block;
+	 padding-left:10px;
+	 margin-bottom:6px;
+	 font-size: 1vw;
+	 
+}
+#left ul{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	padding-top:15px;
+	padding-right:auto;
+	height:auto;
+}
+#left li a:hover:not(.active){
+	left:10%;
+	background-color:blue;
+    color:white;
+	padding: 4px 1px;
+	
+	
+}
+#left .active{
+	background-color: #4CAF50;
+}
+
+/*
+ *reponsive
+ */
+ 
+ /*Tablet*/
+ @media screen and (min-width: 150px) and (max-width:650px){
+	 .body{
+		 margin: 0 auto;
+		 width: 100%;
+	}
+	#main{
+    width: 100%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+	#head{
+	width:100%;
+	height: 100%;
+    background-color: #FFFFFF;
+    border: 1px solid #CDCDCD;
+    margin-bottom:5px;
+}
+#head-link{
+	 height: 80%;
+     line-height: 30px;
+     padding-left: 10px;
+     padding-right: 10px;
+     border: 1px solid #CDCDCD;
+     background-color: #6495ED;
+     margin-bottom:5px;
+     clear: both;
+     text-align: center;
+     font-size: 18px;
+}
+#head-link ul {
+	list-style-type: none;
+	width:230px;
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	position:relative;
+	margin-left:auto;
+	min-width:28%;
+    height: auto;
+	margin-right:auto;
+}
+#head-link ul li {
+	display: inline-table;
+	width: 120px;
+	
+}
+#head-link ul li a {
+	color: #f1f1f1;
+	text-decoration: none;
+	display: block;
+}	
+#head-link ul li a:hover {
+	background: #f1f1f1;
+	color: #333;
+}
+#left{
+     width: 17%;
+     min-height: 600px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: #F5F5F5;
+     margin-bottom: 5px;
+     text-align:left;
+}
+#content{
+	width: 80.9%;
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:right;
+     margin-right: 0px;
+     margin-bottom: 5px;
+}
+#main-content{
+     min-height: 400px;
+     border: 1px solid #CDCDCD;
+     float:left;
+     background-color: #F5F5F5;
+     margin-bottom: 5px;
+     text-align:center;
+}
+#footer{
+     height: auto;
+     clear: both;
+     border: 1px solid #CDCDCD;
+     background-color: #F8F8FF;
+     text-align: center;
+}
+#logoimg{
+	width: 100%;
+}
+#logoimg img{
+	width: 100%;
+}
+#mssv{
+	font-size: 6vw;
+    text-align:center;
+    color: #0000FF;
+}
+.leftSV {
+    width: 40%;
+    height:auto;
+    float:left;
+    margin-top: 30px;
+}
+.rightSV {
+    width:51%;
+    height:500px;
+    float:right;
+    margin-top: 30px;
+    font-size: 3vw;
     text-align: left;
 }
 .img img {
-    width: 350px;
-    height: 250px;
+    width: 100%;
+	height:250px;
     margin:auto;
-    float:right;
+    float:left;
     margin-right: 20px;
+	margin-left: 20px;
 }
 .tennhom {
     text-align:center;
@@ -183,3 +377,6 @@ ul
 #left .active{
 	background-color: #4CAF50;
 }
+ }
+
+
