@@ -6,6 +6,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function () {
+			    $(".tabLink").each(function () {
+			        $(this).click(function () {
+			            tabeId = $(this).attr('id');
+			            $(".tabLink").removeClass("activeLink");
+			            $(this).addClass("activeLink");
+			            $(".tabcontent").addClass("hide");
+			            $("#" + tabeId + "-1").removeClass("hide")
+			            return false;
+			        });
+			    });
+			});
+		</script>
 		
 </head>
 <body>
@@ -23,11 +38,136 @@
 		</ul>
 		</div>		
 		<div id="blog-content">
-				<div class="title-blog"> <strong>Blog Radio</strong></div>
+
+				<div class="left-blog"><!--ben trai cua blog-->
+
+					<div class="title-blog"> <h2>Blog nghệ thuật</h2></div>
+					<div class="top-item-lag"> 
+						<div class="img-blog-lag"><a href="#"><img src="image/imageblog/canhthumuaxuan.jpg"></a></div>
+						<div class="title-blog-lag"><a href="#"><h2 style="color: #8a623b" >Cánh thư mùa xuân</h2></a></div>
+						<div class="blog-tag-content"><p style="font-size: 0.85vw">
+                    Có điều gì đó giữa nhớ và không Cần ai đó giữ riêng mình hoài niệm Những cánh thư trở mình tìm kiếm Lời nguyện cầu trong vũ điệu mưa rơi
+                </p></div>
+						<div class="bloglag-right-hotnhat"> 
+							<strong style="font-size: 0.9vw">Blog nhiều người đọc</strong>
+							<a href="#" title="Em bình yên mà, anh cứ hạnh phúc đi!">Em bình yên mà, anh cứ hạnh...</a>
+							<a href="#" title="Hãy nói rằng anh rất nhớ em đi!">Hãy nói rằng anh rất nhớ em...</a>
+							<a href="#" title="Hạnh phúc tìm lại">Hạnh phúc tìm lại</a>
+							<a href="#" title="Em là cô gái tuổi 23">Em là cô gái tuổi 23</a>
+						</div>
+					</div>	
+					<!--list blog-->			
+					<div class="item-left"> 
+						<div class="item-left1">
+							<a href="#">
+                                       <img src="image/imageblog/thang-ba-ve-co-nguoi-con-thuong-anh1.jpg" at="Tháng ba về có người còn thương anh"></a>
+						</div>
+						<div class="item-left2">
+							<h2><a href="#" >Tháng ba về có người còn thương anh</a></h2>
+                            <p>Tháng ba về mang theo cơn mưa bất chợt Lách tách từng hạt rơi... rơiThấm vào...&nbsp; <a href="#" style="float: right; margin: 0 2px 2px 0px">Xem tiếp</a></p>
+						</div>
+					</div>
+					<div class="item-right"> 
+						<div class="item-left1">
+							<a href="#">
+                                       <img src="image/imageblog/co-nhung-luc.jpg" at="Có những lúc"></a>
+						</div>
+						<div class="item-left2">
+							<h2><a href="#" >Có những lúc</a></h2>
+                            <p>Có những lúc thèm như giọt mưa trong lành tưới mát tâm hồn đã khô cằn...&nbsp;<a href="#" style="float: right; margin: 0 2px 2px 0px">Xem tiếp</a></p>
+						</div>
+					</div>
+					<div class="item-left"> 
+						<div class="item-left1">
+							<a href="#">
+                                       <img src="image/imageblog/han-hoan-thang-ba.JPG" at="Hân hoan tháng ba về"></a>
+						</div>
+						<div class="item-left2">
+							<h2><a href="#" >Hân hoan tháng ba về</a></h2>
+                            <p>Bằng lăng lá chuyển sắc vàng Lá bàng xanh non vừa nhú Vòm sưa già hoa trắng...&nbsp; <a href="#" style="float: right; margin: 0 2px 2px 0px">Xem tiếp</a></p>
+						</div>
+					</div>
+					<div class="item-right"> 
+						<div class="item-left1">
+							<a href="#">
+                                       <img src="image/imageblog/thang-ba-ve-gui-me-bai-tho.jpg" at="Lời yêu sao chẳng nói thành lời"></a>
+						</div>
+						<div class="item-left2">
+							<h2><a href="#" >Lời yêu sao chẳng nói thành lời</a></h2>
+                            <p>Ơn nghĩa sinh thành thật lớn lắm mẹ ơi! Có đi hết cuộc đời con cũng...&nbsp; <a href="#" style="float: right; margin: 0 2px 2px 0px">Xem tiếp</a></p>
+						</div>
+					</div>
+					<!--end list blog-->
+
+					<div class="pagination">
+			            <a href="?1">&lt;&lt;</a>
+			            <span class="current">1</span>
+			            <a href="?1">2</a> 
+			            <a href="?3">3</a>
+			            <a href="?4">4</a>
+			            <a href="?5">5</a>
+			            <a href="?6">6</a>
+			            <a href="?7">7</a>
+			            <a href="?3">&gt;&gt;</a>
+    				</div>
+
+				</div>
+				
+				<div class="right-blog">
+					<div class="search">
+					<input class="input-search" type="text" placeholder = "Search"></input>
+					<input class="btnsearch" type="submit" value="Search" style="width: 23%"> </input>
+					</div>
+
+					<div class="hot-box">
+					
+						<ul class="tabs">
+							<li class="active"><a href="javascript:;" class="tabLink activeLink" id = "cont-1">Đọc nhiều nhất</a></li>
+							<li style><a href="javascript:;" class="tabLink" id="cont-2">Bình luận nhiều nhất</a></li>
+						</ul>
+						
+						<div class="tab-container">
+							<!--doc nhieu nhat-->
+							<div class="tabcontent" id = "cont-1-1">
+								<div class="box_baihatmoi">
+		                            <div class="name-baihat1">
+		                                <a href="#">Tôi 25 và tôi độc thân</a>
+		                            </div>                        
+		                            <div class="name-baihat1">
+		                                <a href="#">Cuộc thi viết “ĐỘC THÂN KHÔNG CÔ ĐƠN”</a>
+		                            </div>                        
+		                            <div class="name-baihat1">
+		                                <a href="#">Sẽ có một ngày, sẽ có một người…</a>
+		                            </div>  
+	                    		</div>
+							</div><!--end doc nhieu nhat-->
+
+						<!--binh luan nhieu nhat-->
+						<div class="tabcontent hide" id = "cont-2-1">
+							<div class="box_baihatmoi">
+		                        <div class="name-baihat1">
+		                            <a href="#">Độc thân đâu có gì to tát</a></div>
+		                        <div class="name-baihat1">
+		                            <a href="#">Hẹn hò với tự do</a></div>
+		                        <div class="name-baihat1">
+		                            <a href="#">Tôi 25 và tôi độc thân</a> </div>
+	                        
+	                    	 </div>
+
+						</div><!--end binh luan nhieu nhat-->
+
+						</div><!--end tab-content-->
+
+					</div><!--end hot-box-->
+				</div>	
+				
+				<div class="side-bar-blog"></div>
 		</div>
 		<div id="footer">
 			CTT226 - Ứng dụng phân tán
 		</div>
+		
 	</div>
+
 </body>
 </html>
