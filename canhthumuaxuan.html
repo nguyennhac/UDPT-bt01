@@ -1,0 +1,209 @@
+<!DOCTYPE html >
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script type="text/javascript">
+			$(document).ready(function () {
+			    $(".tabLink").each(function () {
+			        $(this).click(function () {
+			            tabeId = $(this).attr('id');
+			            $(".tabLink").removeClass("activeLink");
+			            $(this).addClass("activeLink");
+			            $(".tabcontent").addClass("hide");
+			            $("#" + tabeId + "-1").removeClass("hide")
+			            return false;
+			        });
+			    });
+			});
+		</script>
+		
+</head>
+<body>
+	<div id="main">
+		<div id="head">
+			<div id="logoimg">
+				<img src="image\logo.jpg">
+			</div>
+		</div>
+		<div id="head-link">
+		<ul>
+			<li><a href="home.html">HOME</a></li>
+			<li><a href="1212231.html">1212231</a></li>
+			<li><a href="1212273.html">1212273</a></li>
+		</ul>
+		</div>		
+		<div id="blog-content" style="height: 1500px">
+				<div class="title-blog"> <h2>Blog nghệ thuật</h2></div>
+				<div class="left-blog-detail"><!--ben trai cua blog-->
+					<h1 style="font-size:16px; color:#E16C2A;">Cánh thư mùa xuân</h1>
+					<h5>01/03/2016 01:00:00 GMT +7 </h5>
+					<div class="addthis_toolbox addthis_default_style " style=" float:right; margin:0px 10px 10px auto;">
+			            <a class="addthis_button_facebook_like at300b" fb:like:layout="button_count"><div class="fb-like fb_iframe_widget" data-ref=".VvthbEQhcRs.like" data-layout="button_count" data-show_faces="false" data-share="false" data-action="like" data-width="90" data-font="arial" data-href="http://blogradio.vn/tho-blog/canh-thu-mua-xuan/205980" data-send="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=172525162793917&amp;container_width=0&amp;font=arial&amp;href=http%3A%2F%2Fblogradio.vn%2Ftho-blog%2Fcanh-thu-mua-xuan%2F205980&amp;layout=button_count&amp;locale=vi_VN&amp;ref=.VvthbEQhcRs.like&amp;sdk=joey&amp;send=false&amp;share=false&amp;show_faces=false&amp;width=90"><span style="vertical-align: bottom; width: 89px; height: 20px;"><iframe name="f2061384c4" width="90px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="http://www.facebook.com/plugins/like.php?action=like&amp;app_id=172525162793917&amp;channel=http%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D42%23cb%3Df19251063c%26domain%3Dblogradio.vn%26origin%3Dhttp%253A%252F%252Fblogradio.vn%252Ff24fb98aec%26relation%3Dparent.parent&amp;container_width=0&amp;font=arial&amp;href=http%3A%2F%2Fblogradio.vn%2Ftho-blog%2Fcanh-thu-mua-xuan%2F205980&amp;layout=button_count&amp;locale=vi_VN&amp;ref=.VvthbEQhcRs.like&amp;sdk=joey&amp;send=false&amp;share=false&amp;show_faces=false&amp;width=90" style="border: none; visibility: visible; width: 89px; height: 20px;" class=""></iframe></span></div></a>
+			            <a class="addthis_button_facebook addthis_button_preferred_1 at300b" title="Facebook" href="#"><span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px; background-color: rgb(59, 89, 152);"><img class="at-icon at-icon-facebook" title="Facebook" alt="Facebook" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAbklEQVR4AWMY/GAU/A/+v///i/9//n/9/5wc7VP+IwHStTsCdVFkQDdU59n/Sf8D/weSbsA2qAEW5AbgAagBKvQ34P86MHwNNWAnmNdPigHYwFZKDZhIigEPwPAHVOtTMC+JrrEwasCoAfQHowAAadfyaTnjrnIAAAAASUVORK5CYII=" style="width: 16px; height: 16px;"></span></a>
+			            <a class="addthis_button_twitter addthis_button_preferred_2 at300b" title="Tweet" href="#"><span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px; background-color: rgb(29, 161, 242);"><img class="at-icon at-icon-twitter" title="Twitter" alt="Twitter" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAABDElEQVR4Ae3UIUg7URwH8D+TiVpUcF0wmMyuuGQQRJtOEIZiMhhEFMNAQTCbDCKI8C8rEwVtBoMYhTWLWAxjaWic+wiDgd68u4lJ3OfSPbgv73jv+/vnh08n4LcEdFv2X8GWwcb7iGRYwIJMy+cp95rK1hVdhe/gQtWk4NpnTxZNhAXcoSb/YYvDWt3qCQs4ATxY0ttYmRJ0rS/8F9Lqml6dy9sXtBt1CjlH4mxEBVyKNxMVkBWnbij6Ip2KdhN3E/vtqAo3HxeQ8iJcSSK+C1lvvlaTbq9M485UtFprt40Jc54FbcbXedS0nAOPgipm25kHXVaUBJXtGfjOQBmz6lBB0bFtGcnOUP0DAe8/L9waaPIC3gAAAABJRU5ErkJggg==" style="width: 16px; height: 16px;"></span></a>
+			            <a class="addthis_button_email addthis_button_preferred_3 at300b" target="_blank" title="Email" href="#"><span class="at-icon-wrapper" style="line-height: 16px; height: 16px; width: 16px; background-color: rgb(132, 132, 132);"><img class="at-icon at-icon-email" title="Email" alt="Email" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAAqElEQVR4Ae3Tv4mFQBzE8YlNLcASrOEu8xWgNXhXhU3YhDZhbhW7sWBmsvA9WDiE5X648KKD/YQTzP6BUaoo6PA88bxkwZPDy8JBjkMWRgJPAqNstGzYYKOVjW8aiQHHXxyDRMOXLMDFREXFxMUtyWUhwtHHk1Z+rfFmPY5IlvStfLKz83H/TX4BBGbqmNbMBMgvuJ0sLJwkZMH2XwreH9Mra86dEkXxA4AkTMcNBEA0AAAAAElFTkSuQmCC" style="width: 16px; height: 16px;"></span></a>
+			            <a class="addthis_counter addthis_bubble_style" href="#" style="display: inline-block;" tabindex="1000"><a class="addthis_button_expanded" target="_blank" title="Thêm..." href="#">0</a><a class="atc_s addthis_button_compact"><span></span></a></a>
+			            <div class="atclear"></div>
+
+			            </div>
+
+			          <p rel="content-body"></p>
+			          <div align="justify">
+			          	<font face="Arial">Có điều gì đó muốn nói cùng em</font>
+			          	</br>
+			          	<font face="Arial">Mùa xuân của những ngày thật khác</font>
+			          	<br>
+			          	<font face="Arial">Con chim én bên phương nam bay lạc</font>
+			          	<br>
+			          	<font face="Arial">Rũ mình quên hết một đêm đông<br><br><img style="width: 100%; height: 100%;" alt="Cánh thư mùa xuân" src="image/imageblog/canhthumuaxuan.jpg"><br></font>
+			          	<font face="Arial">Có điều gì đó giữa nhớ và không</font>
+			          	<br>
+			          	<font face="Arial">Cần ai đó giữ riêng mình hoài niệm</font>
+			          	<br>
+			          	<font face="Arial">Những cánh thư trở mình tìm kiếm</font>
+			          	<br>
+			          	<font face="Arial">Lời nguyện cầu trong vũ điệu mưa rơi</font>
+			          	<br>
+			          	<br>
+			          	<font face="Arial">Những giấc mơ bên trời</font>
+			          	<br>
+			          	<font face="Arial">Chạm nhẹ miền ký ức</font>
+			          	<br>
+			          	<font face="Arial">Về Pataya, về nơi ấy</font>
+			          	<br>
+			          	<font face="Arial">Những lời nói chưa thể phai phôi…</font>
+			          	<br>
+			          	<br>
+			          	<br>
+			          	<br>
+			          	<br>
+			       </div>
+
+			       <div class="tag">
+                			<span>Tag:</span>
+		                          <a href="#" onclick="googleSearchTags('cánh thư mùa xuân');">cánh thư mùa xuân, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' chim én');"> chim én, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' thơ blog');"> thơ blog, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' mùa xuân');"> mùa xuân, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' miền ký ức');"> miền ký ức, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' giấc mơ bên trời');"> giấc mơ bên trời, </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->
+		                          <a href="#" onclick="googleSearchTags(' ');"> , </a>
+		                    <!--/tim-kiem/c=0?key=WFFD.Core.Library.Util.UnicodeUtility.UnicodeToKoDau(lst[i])?1-->         
+		           	</div>
+		           		
+           			 <div class="comment" >
+                    	<div class="_491z clearfix">
+                    		<div class="lfloat">
+                    			<span><span display="inline" class=" _50f7">1 bình luận</span></span>
+                    		</div>
+                    		<div class="rfloat" style="float: right">
+                    			<div >
+                    			<span class="_pup">Sắp xếp theo</span><!-- react-text: 10 --> <!-- /react-text -->
+                    			<div class="_3-8_ _6a _6b">
+                    				<div class="uiPopover _6a _6b">
+                    					<a class="_p _55pi _5vto _55_p _2agf _4jy0 _4jy3 _517h _51sy _42ft" href="#" role="button" style="max-width: 200px;">
+                    					<span class="_55pe" style="max-width: 186px;"><!-- react-text: 15 -->Cũ nhất<!-- /react-text --></span>
+                    					<i alt="" class="_3-99 img sp_wbrxMs0Iv2Z sx_163a0d"></i>
+                    					</a>
+                    				</div>
+
+                    					<input type="hidden" value="time"></div>
+                    			</div>
+                    		</div>
+                    	</div>
+
+                    	<div class="_4uyl _1zz7 _2392 clearfix">
+                    		<div class="lfloat">
+                    			<a href="https://www.facebook.com/mien.hoangviet" src="https://scontent-hkg3-1.xx.fbcdn.net/hprofile-xla1/v/t1.0-1/c0.10.48.48/p48x48/12801149_685462638261245_4123338325892411685_n.jpg?oh=3c22f51e6698065388d2788a79c614b7&amp;oe=5784C6CA" target="_blank" class="img _8o _8s UFIImageBlockImage"><img class="_1ci img" src="https://scontent-hkg3-1.xx.fbcdn.net/hprofile-xla1/v/t1.0-1/c0.10.48.48/p48x48/12801149_685462638261245_4123338325892411685_n.jpg?oh=3c22f51e6698065388d2788a79c614b7&amp;oe=5784C6CA"></a>
+                    		 </div>
+                    		 <div class="form-com" style="width: 100%">
+	                    		 <div class="UFIImageBlockContent _42ef">
+	                    		 <div>
+		                    		<div class="UFIInputContainer"> 
+		                    			<div class="_1cb _5yk1">
+			                    			<div class="_5yk2" tabindex="-2">
+			                    				<div class="_5rp7"><div class="_1p1t"><div class="_1p1v">Thêm bình luận...</div></div><div class="_5rpb"><div aria-autocomplete="list" aria-expanded="false" aria-haspopup="false" aria-owns="js_0" class="_5rpu" contenteditable="true" role="combobox" spellcheck="false" title="Thêm bình luận..." style="outline: none; white-space: pre-wrap; word-wrap: break-word;"><div data-contents="true"><div class="" data-block="true" data-editor="d8s4l" data-offset-key="3o3an-0-0"><div data-offset-key="3o3an-0-0" class="_1mf _1mj"><span data-offset-key="3o3an-0-0"><br data-text="true"></span></div></div></div></div></div></div>
+
+			                    			</div>
+		                    			</div>
+		                    	</div>
+	                    		</div>
+	                    	</div>
+
+	                    	<div class="_4uym"><!-- react-empty: 89 --><div class="_5tr6 clearfix _2ph- clearfix"><div class="_ohe lfloat"><table cols="1" class="uiGrid _51mz" cellspacing="0" cellpadding="0"><tbody><tr class="_51mx"><td class="_51mw _51m-"><div class="_1u0n uiInputLabel clearfix" display="block"><label class="uiInputLabelInput _55sg _kv1"><input type="checkbox" id="js_input_label_72"><span></span></label><label class="_3-99 _2ern _50f8 _5kx5 uiInputLabelLabel" for="js_input_label_72">Cũng đăng lên Facebook</label></div></td></tr><tr class="_51mx"><td class="_51mw _51m-"><span></span></td></tr></tbody></table></div><div class="_ohf rfloat"><span><!-- react-empty: 106 --><button class="rfloat _3-99 _4jy0 _4jy3 _4jy1 _51sy selected _42ft _42fr" type="submit" value="1" disabled=""><!-- react-text: 108 -->Đăng<!-- /react-text --></button></span></div></div>
+	                    	</div>
+
+                    	</div>
+                    	</div>
+                    	</div>
+				</div>
+				
+				<div class="right-blog">	
+					<div class="search">
+					<input class="input-search" type="text" placeholder = "Search"></input>
+					<input class="btnsearch" type="submit" value="Search" style="width: 23%"> </input>
+					</div>
+
+					<div class="hot-box">
+					
+						<ul class="tabs">
+							<li class="active"><a href="javascript:;" class="tabLink activeLink" id = "cont-1">Đọc nhiều nhất</a></li>
+							<li style><a href="javascript:;" class="tabLink" id="cont-2">Bình luận nhiều nhất</a></li>
+						</ul>
+						
+						<div class="tab-container">
+							<!--doc nhieu nhat-->
+							<div class="tabcontent" id = "cont-1-1">
+								<div class="box_baihatmoi">
+		                            <div class="name-baihat1">
+		                                <a href="#">Tôi 25 và tôi độc thân</a>
+		                            </div>                        
+		                            <div class="name-baihat1">
+		                                <a href="#">Cuộc thi viết “ĐỘC THÂN KHÔNG CÔ ĐƠN”</a>
+		                            </div>                        
+		                            <div class="name-baihat1">
+		                                <a href="#">Sẽ có một ngày, sẽ có một người…</a>
+		                            </div>  
+	                    		</div>
+							</div><!--end doc nhieu nhat-->
+
+						<!--binh luan nhieu nhat-->
+						<div class="tabcontent hide" id = "cont-2-1">
+							<div class="box_baihatmoi">
+		                        <div class="name-baihat1">
+		                            <a href="#">Độc thân đâu có gì to tát</a></div>
+		                        <div class="name-baihat1">
+		                            <a href="#">Hẹn hò với tự do</a></div>
+		                        <div class="name-baihat1">
+		                            <a href="#">Tôi 25 và tôi độc thân</a> </div>
+	                        
+	                    	 </div>
+
+						</div><!--end binh luan nhieu nhat-->
+
+						</div><!--end tab-content-->
+
+					</div><!--end hot-box-->
+				</div>	
+				
+				<div class="side-bar-blog"></div>
+		</div>
+		<div id="footer">
+			CTT226 - Ứng dụng phân tán
+		</div>
+		
+	</div>
+
+</body>
+</html>
