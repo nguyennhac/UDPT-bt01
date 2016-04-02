@@ -855,5 +855,19 @@ a {
 	background-color: #4CAF50;
 }
 }
-
-
+/*trang lien he */
+#main-content-right form{
+	width: 600px;
+	margin: 40px auto;
+	font-size: 14px;
+}
+#main-content-right form div{
+	margin: 0px 0px 5px 0px;
+} 
+label {
+    width: 50px;
+    display: block;
+    float: left;
+    clear: left;
+	font-weight: bold;
+}
