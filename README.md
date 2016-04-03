@@ -1,10 +1,11 @@
-# BT-UDPT-1 - *Name of your app*
+﻿# BT-UDPT-1 - *Name of your app*
 
 **Name of your app** là một bài tập 1 tại môn UDPT.
 
-Thành viên: **Tên và mã số sinh viên thành viên**
+Thành viên: **Hoàng Viết Miền - 1212231
+	      Lê Nguyễn Nhạc - 1212273**
 
-URL: **URL hosting của bài tập**
+URL: ****
 
 ## Yêu cầu
 
@@ -13,22 +14,22 @@ Yêu cầu **GIT**:
 * [ ] Có sử dụng GIT.
 * [ ] Sử dụng GIT trên 1 branch.
 * [ ] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
 * [ ] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **thiết kế**:
 
 * [ ] Thiết kế theo table.
-* [ ] Thiết kế với div.
-* [ ] Thiết kế nâng cao
-    * [ ] Navigation, header, footer, sidebar.
-    * [ ] Các hiệu ứng: hover, focus,...
-* [ ] Thiết kế chạy trên nhiều trình duyệt
-    * [ ] IE
-    * [ ] Firefox
-    * [ ] Chrome
-    * [ ] Icon, màu sắc,...
-* [ ] Thiết kế responsive
+* [x] Thiết kế với div.
+* [x] Thiết kế nâng cao
+    * [x] Navigation, header, footer, sidebar.
+    * [x] Các hiệu ứng: hover, focus,...
+* [x] Thiết kế chạy trên nhiều trình duyệt
+    * [x] IE
+    * [x] Firefox
+    * [x] Chrome
+    * [x] Icon, màu sắc,...
+* [x] Thiết kế responsive
 
 Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
@@ -37,7 +38,7 @@ Liệt kê các **yêu cầu nâng cao** đã thực hiện:
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+![Video Walkthrough](demo1.gif)
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
